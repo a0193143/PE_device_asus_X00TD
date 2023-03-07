@@ -144,6 +144,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# GoogleCamera
+$(call inherit-product-if-exists, vendor/asus/GcamPrebuilt/GoogleCamera.mk)
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
